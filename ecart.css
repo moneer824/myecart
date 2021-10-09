@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Redressed&display=swap');
+
+body {
+    margin: 0;
+}
+
+#product {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    /* height: 600px; */
+    justify-content: space-around;
+}
+
+#heading h1 span {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(161, 8, 8);
+}
+
+#heading h1 {
+    /* font-family: 'Lobster Two', cursive; */
+    color: rgb(39, 39, 39);
+    font-size: 2.5em;
+
+}
+
+#product>div {
+    /* border: 2px solid black; */
+    height: 200px;
+    margin-bottom: 200px;
+    font-size: 1.4em;
+    /* display: flex; */
+}
+
+#product>div>:nth-child(3) {
+    color: rgb(226, 26, 26);
+
+    padding-left: .5em;
+}
+
+#product>div>:nth-child(2) {
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    padding-left: .5em;
+
+}
+
+#product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 6px;
+
+}
+
+#product>div>button {
+    color: white;
+    width: 100%;
+    height: 20%;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: rgb(41 41 41);
+}
+
+#product>div>button:hover {
+    background-color: white;
+    color: rgb(41 41 41);
+}
+
+#heading {
+    text-align: center;
+    border-bottom: 10px solid rgb(196, 196, 196);
+    border-style: dotted;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-width: 10px;
+    margin: 40px auto;
+    width: max-content;
+}
+
+#navbar {
+    /* background-color: rgb(255, 236, 236); */
+    background-image: linear-gradient(rgb(61, 61, 61), rgb(24, 24, 24));
+
+    height: 40px;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 0;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li h2 {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(255, 255, 255);
+    margin: 0 5rem 0 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-family: 'Redressed', cursive;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    color: rgb(226, 226, 226);
+
+}
+
+
+
+#navbar ul li a:hover {
+    color: rgb(255, 245, 245);
+    /* background-color: rgb(161, 8, 8); */
+    background-image: linear-gradient(rgb(192, 192, 192), rgb(58, 58, 58));
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #product {
+        display: grid;
+        grid-template-columns: 100%;
+        /* height: 600px; */
+        justify-content: center;
+    }
+
+    #heading h1 {
+        font-size: 1.5em;
+
+    }
+    #navbar ul li h2 {
+    font-family: 'Lobster Two', cursive;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+    #navbar ul li a {
+      
+        font-size: .5em;
+        padding: 0.5em;
+        color: rgb(226, 226, 226);
+        visibility: hidden;
+
+    }
+
+}
